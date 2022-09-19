@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">FORMULARIO DE REGISTRO</h1>
+    <h2 id="despensa">La Despensa de Dulcinea</h2>
+    <p id="description">Por favor rellene los campos solicitados y nos pondremos en contacto lo antes posible</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" >Nombre: <input id="name" type="text" name="nombre" required placeholder="Escriba su Nombre" /></label>
+        <label id="apellidos-label">Apellidos: <input type="text" name="apellidos" required placeholder="Escriba sus Apellidos" /></label>
+        <label id="number-label">Edad: <input id="number" type="number" min="16" max="120" placeholder="99" /></label>
+        <label id="email-label">E-mail: <input id="email" type="email" name="email" required placeholder="ejem@gmail.com" /></label>
+      </fieldset>
+      <fieldset>Tipo de usuario:
+        <label><input type="radio" name="mayorista-minorista" class="inline" value="prsonal" /> Personal</label>
+        <label><input type="radio" name="mayorista-minorista" class="inline" value="empresa" /> Empresa</label>
+      </fieldset>
+      <fieldset>¿En que productos estás interesado?:
+        <label> 
+          <input class="productos" type="checkbox" name="queso" value="queso" /> Quesos
+          <input class="productos" type="checkbox" name="vino" value="vino" /> Vinos
+          <input class="productos" type="checkbox" name="embutidos" value="embutidos" /> Embutidos
+          <input class="productos" type="checkbox" name="conservas" value="conservas" /> Conservas
+          <input class="productos" type="checkbox" name="aceites" value="aceites" /> Aceites
+          <input class="productos" type="checkbox" name="vinagres" value="vinagres" /> Vinagres
+          <input class="productos" type="checkbox" name="tortas" value="tortas" /> Tortas gazpacho
+          <input class="productos" type="checkbox" name="miguelitos" value="miguelitos" /> Miguelitos
+        </label/>
+        <label>¿Cómo nos has conocido?
+          <select id="dropdown" name="referrer">
+            <option value="">(elige una)</option>
+            <option value="1">Redes Sociales</option>
+            <option value="2">Mailing</option>
+            <option value="3">Buscadores Internet</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Comenta lo que quieras:
+          <textarea name="bio" rows="3" cols="30" placeholder="Estaria intersado en ..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
